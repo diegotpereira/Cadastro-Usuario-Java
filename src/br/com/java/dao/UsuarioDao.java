@@ -1,4 +1,4 @@
-package br.com.java;
+package br.com.java.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

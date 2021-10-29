@@ -7,7 +7,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
-import br.com.java.UsuarioDao;
+import br.com.java.dao.UsuarioDao;
 import br.com.java.modelo.Usuario;
 
 import java.awt.Font;
@@ -113,9 +113,9 @@ public class UsuarioGui extends JFrame {
         		usuarios.setEmail(textEmail.getText());
         		usuarios.setTelefone(textTelefone.getText());
         		
-        		// fazendo a validação dos dados
+        		// fazendo a validaï¿½ï¿½o dos dados
         		if ((textNome.getText().isEmpty()) || (textCpf.getText().isEmpty()) || (textEmail.getText().isEmpty()) || (textTelefone.getText().isEmpty())){
-        			JOptionPane.showMessageDialog(null, "Os campos não podem retornar vazios");
+        			JOptionPane.showMessageDialog(null, "Os campos nï¿½o podem retornar vazios");
         			
 				} else {
 					
@@ -123,7 +123,7 @@ public class UsuarioGui extends JFrame {
 					UsuarioDao dao  = new UsuarioDao();
 					dao.adicionar(usuarios);
 					
-					JOptionPane.showMessageDialog(null, "Usuário" + textNome.getText() + "Inserido com sucesso");
+					JOptionPane.showMessageDialog(null, "Usuï¿½rio" + textNome.getText() + "Inserido com sucesso");
 				}
         	}
         });
